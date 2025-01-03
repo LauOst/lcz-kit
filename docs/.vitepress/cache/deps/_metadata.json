@@ -1,0 +1,61 @@
+{
+  "hash": "84391ebd",
+  "configHash": "69c0e31c",
+  "lockfileHash": "0a944b63",
+  "browserHash": "571a1f1f",
+  "optimized": {
+    "vue": {
+      "src": "../../../../node_modules/.pnpm/vue@3.5.13_typescript@5.7.2/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "9b91eaf9",
+      "needsInterop": false
+    },
+    "vitepress > @vue/devtools-api": {
+      "src": "../../../../node_modules/.pnpm/@vue+devtools-api@7.6.8/node_modules/@vue/devtools-api/dist/index.js",
+      "file": "vitepress___@vue_devtools-api.js",
+      "fileHash": "42a0f489",
+      "needsInterop": false
+    },
+    "vitepress > @vueuse/core": {
+      "src": "../../../../node_modules/.pnpm/@vueuse+core@11.3.0_vue@3.5.13_typescript@5.7.2_/node_modules/@vueuse/core/index.mjs",
+      "file": "vitepress___@vueuse_core.js",
+      "fileHash": "a8c44901",
+      "needsInterop": false
+    },
+    "class-variance-authority": {
+      "src": "../../../../node_modules/.pnpm/class-variance-authority@0.7.1/node_modules/class-variance-authority/dist/index.mjs",
+      "file": "class-variance-authority.js",
+      "fileHash": "ca1db511",
+      "needsInterop": false
+    },
+    "radix-vue": {
+      "src": "../../../../node_modules/.pnpm/radix-vue@1.9.12_vue@3.5.13_typescript@5.7.2_/node_modules/radix-vue/dist/index.js",
+      "file": "radix-vue.js",
+      "fileHash": "5b84603a",
+      "needsInterop": false
+    },
+    "clsx": {
+      "src": "../../../../node_modules/.pnpm/clsx@2.1.1/node_modules/clsx/dist/clsx.mjs",
+      "file": "clsx.js",
+      "fileHash": "330a666f",
+      "needsInterop": false
+    },
+    "tailwind-merge": {
+      "src": "../../../../node_modules/.pnpm/tailwind-merge@2.6.0/node_modules/tailwind-merge/dist/bundle-mjs.mjs",
+      "file": "tailwind-merge.js",
+      "fileHash": "3f5870a5",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-X5ROPV6U": {
+      "file": "chunk-X5ROPV6U.js"
+    },
+    "chunk-X54IR6VG": {
+      "file": "chunk-X54IR6VG.js"
+    },
+    "chunk-E6AZFW2I": {
+      "file": "chunk-E6AZFW2I.js"
+    }
+  }
+}

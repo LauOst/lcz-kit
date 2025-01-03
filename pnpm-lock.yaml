@@ -12,7 +12,7 @@ importers:
         specifier: ^1.0.0
         version: 1.0.0(vue@3.5.13(typescript@5.7.2))
       '@vueuse/core':
-        specifier: ^10.7.0
+        specifier: ^10.11.1
         version: 10.11.1(vue@3.5.13(typescript@5.7.2))
       class-variance-authority:
         specifier: ^0.7.1
@@ -70,7 +70,7 @@ importers:
         specifier: ^0.5.0
         version: 0.5.1
       autoprefixer:
-        specifier: ^10.4.16
+        specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.49)
       commitizen:
         specifier: ^4.3.0
@@ -91,13 +91,13 @@ importers:
         specifier: ^15.2.0
         version: 15.3.0
       postcss:
-        specifier: ^8.4.32
+        specifier: ^8.4.49
         version: 8.4.49
       prettier:
         specifier: ^3.0.3
         version: 3.4.2
       tailwindcss:
-        specifier: ^3.4.0
+        specifier: ^3.4.17
         version: 3.4.17(ts-node@10.9.2(@types/node@18.19.68)(typescript@5.7.2))
       typescript:
         specifier: ^5.2.2

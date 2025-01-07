@@ -1,0 +1,22 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "baseUrl": ".",
+    "rootDir": "..",
+    "paths": {
+      "@/*": ["../src/*"],
+      "~docs/*": ["./*"]
+    },
+    "types": ["vite/client"]
+  },
+  "include": [
+    "env.d.ts",
+    ".vitepress/**/*.ts",
+    ".vitepress/**/*.vue",
+    "components/**/*.ts",
+    "components/**/*.vue",
+    "../src/**/*.ts",
+    "../src/**/*.vue"
+  ]
+}

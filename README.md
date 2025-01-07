@@ -1,6 +1,10 @@
 # lcz-kit
 
-A React component and utility library.
+A Vue utility library with hooks and tools
+
+## Documentation
+
+Visit our documentation at [https://liujie3612.github.io/lcz-kit/](https://liujie3612.github.io/lcz-kit/)
 
 ## Installation
 
@@ -14,12 +18,8 @@ pnpm add lcz-kit
 
 ## Usage
 
-```jsx
-import { ComponentName } from 'lcz-kit'
-
-function App() {
-  return <ComponentName />
-}
+```typescript
+import { useRequest } from 'lcz-kit'
 ```
 
 ## Features
@@ -27,10 +27,6 @@ function App() {
 - Feature 1
 - Feature 2
 - Feature 3
-
-## Documentation
-
-[Documentation Link]
 
 ## Contributing
 

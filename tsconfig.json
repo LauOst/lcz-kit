@@ -1,5 +1,5 @@
 {
-  "extends": "@vue/tsconfig/tsconfig.json",
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
   "compilerOptions": {
     "target": "esnext",
     "useDefineForClassFields": true,
@@ -16,8 +16,23 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
-    }
+    },
+    "composite": true,
+    "types": ["node"],
+    "declaration": true,
+    "declarationDir": "./dist/types",
+    "emitDeclarationOnly": true,
+    "outDir": "./dist"
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
+  "include": ["src/**/*", "src/**/*.vue", "src/**/*.ts"],
+  "exclude": [
+    "src/**/*.test.ts",
+    "src/**/*.spec.ts",
+    "src/layouts/**/*",
+    "src/pages/**/*",
+    "src/router/**/*",
+    "src/examples/**/*",
+    "node_modules"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
-} 
+}

@@ -4,7 +4,7 @@ A Vue utility library with hooks and tools
 
 ## Documentation
 
-Visit our documentation at [https://liujie3612.github.io/lcz-kit/](https://liujie3612.github.io/lcz-kit/)
+Visit our documentation at [https://LauOst.github.io/lcz-kit/](https://LauOst.github.io/lcz-kit/)
 
 ## Installation
 

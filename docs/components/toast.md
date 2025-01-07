@@ -30,8 +30,8 @@ const showToastWithTitle = () => {
 
 <template>
   <div class="space-x-4">
-    <Button @click="showToast">显示提示</Button>
-    <Button @click="showToastWithTitle">显示带标题的提示</Button>
+    <LButton @click="showToast">显示提示</LButton>
+    <LButton @click="showToastWithTitle">显示带标题的提示</LButton>
   </div>
 </template>
 ```
@@ -87,10 +87,10 @@ const showError = () => {
 
 <template>
   <div class="space-x-4">
-    <Button @click="showDefault">默认提示</Button>
-    <Button @click="showSuccess" variant="success">成功提示</Button>
-    <Button @click="showWarning" variant="warning">警告提示</Button>
-    <Button @click="showError" variant="destructive">错误提示</Button>
+    <LButton @click="showDefault">默认提示</LButton>
+    <LButton @click="showSuccess" variant="success">成功提示</LButton>
+    <LButton @click="showWarning" variant="warning">警告提示</LButton>
+    <LButton @click="showError" variant="destructive">错误提示</LButton>
   </div>
 </template>
 ```

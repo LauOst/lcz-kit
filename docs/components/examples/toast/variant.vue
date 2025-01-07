@@ -1,19 +1,19 @@
 <template>
   <div class="space-x-4">
-    <BaseButton @click="showDefault">默认提示</BaseButton>
-    <BaseButton @click="showSuccess" variant="default" class="bg-green-500 hover:bg-green-600"
-      >成功提示</BaseButton
+    <LButton @click="showDefault">默认提示</LButton>
+    <LButton @click="showSuccess" variant="default" class="bg-green-500 hover:bg-green-600"
+      >成功提示</LButton
     >
-    <BaseButton @click="showWarning" variant="default" class="bg-yellow-500 hover:bg-yellow-600"
-      >警告提示</BaseButton
+    <LButton @click="showWarning" variant="default" class="bg-yellow-500 hover:bg-yellow-600"
+      >警告提示</LButton
     >
-    <BaseButton @click="showError" variant="destructive">错误提示</BaseButton>
+    <LButton @click="showError" variant="destructive">错误提示</LButton>
   </div>
 </template>
 
 <script setup lang="ts">
-import { useToast } from '../../../../src/components/toast/BaseToast'
-import { BaseButton } from '../../../../src/components/button'
+import { useToast } from '../../../../src/components/toast/LToast'
+import { LButton } from '../../../../src/components/button'
 
 const toast = useToast()
 

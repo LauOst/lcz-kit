@@ -1,4 +1,4 @@
-# Dialog 对话框
+# LDialog 对话框
 
 对话框组件用于在当前页面打开一个浮层，承载相关操作。
 
@@ -12,8 +12,8 @@
 
 ```vue
 <template>
-  <BaseButton @click="visible = true">打开对话框</BaseButton>
-  <BaseDialog
+  <LButton @click="visible = true">打开对话框</LButton>
+  <LDialog
     v-model="visible"
     title="基础对话框"
     content="这是一个基础的对话框示例"
@@ -49,13 +49,13 @@ const handleCancel = () => {
 ```vue
 <template>
   <div class="flex gap-4">
-    <BaseButton @click="showDialog('sm')">小尺寸</BaseButton>
-    <BaseButton @click="showDialog('md')">中等尺寸</BaseButton>
-    <BaseButton @click="showDialog('lg')">大尺寸</BaseButton>
-    <BaseButton @click="showDialog('xl')">超大尺寸</BaseButton>
-    <BaseButton @click="showDialog('full')">全屏</BaseButton>
+    <LButton @click="showDialog('sm')">小尺寸</LButton>
+    <LButton @click="showDialog('md')">中等尺寸</LButton>
+    <LButton @click="showDialog('lg')">大尺寸</LButton>
+    <LButton @click="showDialog('xl')">超大尺寸</LButton>
+    <LButton @click="showDialog('full')">全屏</LButton>
   </div>
-  <BaseDialog
+  <LDialog
     v-model="visible"
     :width="currentWidth"
     :title="currentWidth + ' 尺寸对话框'"
@@ -89,8 +89,8 @@ const showDialog = (width: typeof currentWidth.value) => {
 
 ```vue
 <template>
-  <BaseButton @click="visible = true">打开对话框</BaseButton>
-  <BaseDialog
+  <LButton @click="visible = true">打开对话框</LButton>
+  <LDialog
     v-model="visible"
     title="自定义按钮"
     content="你可以自定义按钮的文本"
@@ -119,8 +119,8 @@ const visible = ref(false)
 
 ```vue
 <template>
-  <BaseButton @click="visible = true">打开对话框</BaseButton>
-  <BaseDialog v-model="visible" title="用户信息" confirm-text="提交">
+  <LButton @click="visible = true">打开对话框</LButton>
+  <LDialog v-model="visible" title="用户信息" confirm-text="提交">
     <div class="space-y-4">
       <div>
         <label class="block text-sm font-medium mb-1">姓名</label>
@@ -141,7 +141,7 @@ const visible = ref(false)
         />
       </div>
     </div>
-  </BaseDialog>
+  </LDialog>
 </template>
 
 <script setup lang="ts">

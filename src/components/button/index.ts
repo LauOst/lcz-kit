@@ -1,11 +1,15 @@
 import { type App } from 'vue'
-import BaseButton from './BaseButton.vue'
+import LButton from './LButton.vue'
 
-export { BaseButton }
+// 导出组件
+export { default as LButton } from './LButton.vue'
 
-export default {
+// 导出插件
+const ButtonPlugin = {
   title: 'Button 按钮',
   install(app: App) {
-    app.component('LButton', BaseButton)
+    app.component('LButton', LButton)
   }
 }
+
+export default ButtonPlugin

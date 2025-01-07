@@ -40,23 +40,23 @@
     "docs:preview": "vitepress preview docs",
     "yalc:build": "pnpm build && yalc publish"
   },
-  "dependencies": {
-    "@radix-icons/vue": "^1.0.0",
-    "@vueuse/core": "^10.11.1",
-    "axios": "^1.7.9",
-    "class-variance-authority": "^0.7.1",
-    "clsx": "^2.1.1",
-    "dayjs": "^1.11.13",
-    "echarts": "^5.6.0",
-    "lucide-vue-next": "^0.312.0",
+  "peerDependencies": {
+    "vue": "^3.0.0",
+    "vue-router": "4",
     "radix-vue": "^1.9.12",
     "shadcn-vue": "^0.8.0",
     "tailwind-merge": "^2.6.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "echarts": "^5.6.0",
+    "axios": "^1.7.9"
   },
-  "peerDependencies": {
-    "vue": "^3.4.0",
-    "vue-router": "4"
+  "dependencies": {
+    "@radix-icons/vue": "^1.0.0",
+    "@vueuse/core": "^10.11.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "dayjs": "^1.11.13",
+    "lucide-vue-next": "^0.312.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.0",

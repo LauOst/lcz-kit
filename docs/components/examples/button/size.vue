@@ -1,11 +1,11 @@
 <script setup>
-import { BaseButton } from '@/components/button'
+import { LButton } from '@/components/button'
 </script>
 
 <template>
   <div class="space-x-4">
-    <BaseButton size="sm">小按钮</BaseButton>
-    <BaseButton>默认按钮</BaseButton>
-    <BaseButton size="lg">大按钮</BaseButton>
+    <LButton size="sm">小型按钮</LButton>
+    <LButton>默认大小</LButton>
+    <LButton size="lg">大型按钮</LButton>
   </div>
 </template>

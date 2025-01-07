@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { BaseDialog } from '@/components/dialog'
-import { BaseButton } from '@/components/button'
+import { LDialog } from '@/components/dialog'
+import { LButton } from '@/components/button'
 
 const visible = ref(false)
 const formData = ref({
@@ -11,8 +11,8 @@ const formData = ref({
 </script>
 
 <template>
-  <BaseButton @click="visible = true">打开对话框</BaseButton>
-  <BaseDialog v-model="visible" title="用户信息" confirm-text="提交">
+  <LButton @click="visible = true">打开对话框</LButton>
+  <LDialog v-model="visible" title="用户信息" confirm-text="提交">
     <div class="space-y-4">
       <div>
         <label class="block text-sm font-medium mb-1">姓名</label>
@@ -33,5 +33,5 @@ const formData = ref({
         />
       </div>
     </div>
-  </BaseDialog>
+  </LDialog>
 </template>

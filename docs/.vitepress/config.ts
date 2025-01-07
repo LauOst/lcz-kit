@@ -99,6 +99,6 @@ export default defineConfig({
         }
       ]
     },
-    socialLinks: [{ icon: 'github', link: 'https://github.com/yourusername/lcz-kit' }]
+    socialLinks: [{ icon: 'github', link: 'https://github.com/LauOst/lcz-kit' }]
   }
 })

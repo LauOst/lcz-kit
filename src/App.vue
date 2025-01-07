@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { BaseButton } from './components/button'
+import { LButton } from './components/button'
 </script>
 
 <template>
@@ -7,20 +7,20 @@ import { BaseButton } from './components/button'
     <h1 class="text-2xl font-bold mb-4">Button Test</h1>
     <div class="space-y-4">
       <div class="space-x-4">
-        <BaseButton>Default</BaseButton>
-        <BaseButton variant="secondary">Secondary</BaseButton>
-        <BaseButton variant="destructive">Destructive</BaseButton>
+        <LButton>Default</LButton>
+        <LButton variant="secondary">Secondary</LButton>
+        <LButton variant="destructive">Destructive</LButton>
       </div>
       <div class="space-x-4">
-        <BaseButton variant="outline">Outline</BaseButton>
-        <BaseButton variant="ghost">Ghost</BaseButton>
-        <BaseButton variant="link">Link</BaseButton>
+        <LButton variant="outline">Outline</LButton>
+        <LButton variant="ghost">Ghost</LButton>
+        <LButton variant="link">Link</LButton>
       </div>
       <div class="space-x-4">
-        <BaseButton size="lg">Large</BaseButton>
-        <BaseButton>Default</BaseButton>
-        <BaseButton size="sm">Small</BaseButton>
-        <BaseButton size="xs">Extra Small</BaseButton>
+        <LButton size="lg">Large</LButton>
+        <LButton>Default</LButton>
+        <LButton size="sm">Small</LButton>
+        <LButton size="xs">Extra Small</LButton>
       </div>
     </div>
   </div>

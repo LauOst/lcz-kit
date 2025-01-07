@@ -43,13 +43,7 @@ const isDisabled = computed(() => props.disabled || props.loading)
 </script>
 
 <template>
-  <Button
-    :variant="variant"
-    :size="size"
-    :disabled="isDisabled"
-    :type="type"
-    v-bind="$attrs"
-  >
+  <Button :variant="variant" :size="size" :disabled="isDisabled" :type="type" v-bind="$attrs">
     <template v-if="loading">
       <svg
         class="animate-spin -ml-1 mr-3 h-5 w-5"
@@ -57,14 +51,7 @@ const isDisabled = computed(() => props.disabled || props.loading)
         fill="none"
         viewBox="0 0 24 24"
       >
-        <circle
-          class="opacity-25"
-          cx="12"
-          cy="12"
-          r="10"
-          stroke="currentColor"
-          stroke-width="4"
-        />
+        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4" />
         <path
           class="opacity-75"
           fill="currentColor"

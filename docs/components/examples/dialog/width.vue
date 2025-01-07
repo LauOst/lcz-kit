@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { BaseDialog } from '@/components/dialog'
-import { BaseButton } from '@/components/button'
+import { LDialog } from '@/components/dialog'
+import { LButton } from '@/components/button'
 
 const visible = ref(false)
 const currentWidth = ref<'sm' | 'md' | 'lg' | 'xl' | 'full'>('md')
@@ -14,13 +14,13 @@ const showDialog = (width: typeof currentWidth.value) => {
 
 <template>
   <div class="flex gap-4">
-    <BaseButton @click="showDialog('sm')">小尺寸</BaseButton>
-    <BaseButton @click="showDialog('md')">中等尺寸</BaseButton>
-    <BaseButton @click="showDialog('lg')">大尺寸</BaseButton>
-    <BaseButton @click="showDialog('xl')">超大尺寸</BaseButton>
-    <BaseButton @click="showDialog('full')">全屏</BaseButton>
+    <LButton @click="showDialog('sm')">小尺寸</LButton>
+    <LButton @click="showDialog('md')">中等尺寸</LButton>
+    <LButton @click="showDialog('lg')">大尺寸</LButton>
+    <LButton @click="showDialog('xl')">超大尺寸</LButton>
+    <LButton @click="showDialog('full')">全屏</LButton>
   </div>
-  <BaseDialog
+  <LDialog
     v-model="visible"
     :width="currentWidth"
     :title="currentWidth + ' 尺寸对话框'"

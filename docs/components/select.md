@@ -1,4 +1,4 @@
-# Select 选择器
+# LSelect 选择器
 
 基于 shadcn-vue 的 Select 组件进行二次封装，提供了更简单的数据驱动使用方式。
 
@@ -13,7 +13,7 @@
 ```vue
 <template>
   <div class="w-[180px]">
-    <BaseSelect v-model="value" placeholder="请选择" :options="options" />
+    <LSelect v-model="value" placeholder="请选择" :options="options" />
   </div>
 </template>
 
@@ -45,7 +45,7 @@ const options: SelectOption[] = [
 ```vue
 <template>
   <div class="w-[180px]">
-    <BaseSelect
+    <LSelect
       v-model="value"
       placeholder="请选择"
       :options="options"
@@ -82,7 +82,7 @@ const options = [
 ```vue
 <template>
   <div class="w-[180px]">
-    <BaseSelect v-model="value" disabled placeholder="禁用状态" :options="options" />
+    <LSelect v-model="value" disabled placeholder="禁用状态" :options="options" />
   </div>
 </template>
 

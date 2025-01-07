@@ -1,11 +1,15 @@
 import { type App } from 'vue'
-import BaseDialog from './BaseDialog.vue'
+import LDialog from './LDialog.vue'
 
-export { BaseDialog }
+// 导出组件
+export { default as LDialog } from './LDialog.vue'
 
-export default {
+// 导出插件
+const DialogPlugin = {
   title: 'Dialog 对话框',
   install(app: App) {
-    app.component('LDialog', BaseDialog)
+    app.component('LDialog', LDialog)
   }
 }
+
+export default DialogPlugin

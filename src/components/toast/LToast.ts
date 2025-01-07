@@ -1,7 +1,24 @@
 import { useToast as useVanillaToast } from '../ui/toast'
 import type { ToastProps } from '../ui/toast'
+import { createApp, h } from 'vue'
+import LToaster from './LToaster.vue'
 
 type ToastVariant = 'default' | 'success' | 'warning' | 'error'
+
+// 确保 Toaster 只被挂载一次
+let toasterMounted = false
+
+function ensureToasterMounted() {
+  if (toasterMounted) return
+
+  const toasterContainer = document.createElement('div')
+  document.body.appendChild(toasterContainer)
+  const toasterApp = createApp({
+    render: () => h(LToaster)
+  })
+  toasterApp.mount(toasterContainer)
+  toasterMounted = true
+}
 
 export interface ToastOptions extends Omit<Partial<ToastProps>, 'variant' | 'customVariant'> {
   /**
@@ -28,36 +45,31 @@ export interface ToastOptions extends Omit<Partial<ToastProps>, 'variant' | 'cus
 }
 
 export function useToast() {
+  ensureToasterMounted()
   const vanillaToast = useVanillaToast()
 
   const toast = (options: ToastOptions | string) => {
     if (typeof options === 'string') {
       return vanillaToast.toast({
-        description: options,
+        description: options
       })
     }
 
-    const {
-      title,
-      description,
-      actionText,
-      onAction,
-      variant = 'default',
-      ...rest
-    } = options
+    const { title, description, actionText, onAction, variant = 'default', ...rest } = options
 
     const variantMap: Record<ToastVariant, ToastProps['variant']> = {
       default: 'default',
       success: 'default',
       warning: 'default',
-      error: 'destructive',
+      error: 'destructive'
     }
 
     const classes = {
       default: '',
       success: 'border-green-500 bg-green-500 text-white dark:border-green-400 dark:bg-green-400',
-      warning: 'border-yellow-500 bg-yellow-500 text-white dark:border-yellow-400 dark:bg-yellow-400',
-      error: '',
+      warning:
+        'border-yellow-500 bg-yellow-500 text-white dark:border-yellow-400 dark:bg-yellow-400',
+      error: ''
     }
 
     return vanillaToast.toast({
@@ -69,10 +81,10 @@ export function useToast() {
       action: actionText
         ? {
             label: actionText,
-            onClick: onAction,
+            onClick: onAction
           }
         : undefined,
-      ...rest,
+      ...rest
     })
   }
 
@@ -102,7 +114,7 @@ export function useToast() {
     success,
     warning,
     error,
-    dismiss: vanillaToast.dismiss,
+    dismiss: vanillaToast.dismiss
   }
 }
 

@@ -1,11 +1,5 @@
 <script setup lang="ts">
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '../ui/select'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/select'
 
 interface Props<T = any> {
   /**
@@ -49,7 +43,7 @@ const emit = defineEmits<{
 const handleSelect = (value: string) => {
   // 如果原始值是数字，就转回数字类型
   const originalValue = props.options.find(
-    option => String(option[props.valueField]) === value
+    (option) => String(option[props.valueField]) === value
   )?.[props.valueField]
 
   emit('update:modelValue', originalValue ?? value)

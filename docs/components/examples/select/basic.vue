@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import { BaseSelect } from '@/components/select'
+import { LSelect } from '@/components/select'
 import type { SelectOption } from '@/components/select/types'
 
 const value = ref('')
@@ -15,7 +15,7 @@ const options: SelectOption[] = [
 <template>
   <div class="space-y-4">
     <div class="w-[180px]">
-      <BaseSelect v-model="value" placeholder="请选择" :options="options" />
+      <LSelect v-model="value" placeholder="请选择" :options="options" />
     </div>
     <div class="text-sm text-muted-foreground">当前选中：{{ value }}</div>
   </div>

@@ -34,25 +34,14 @@ export default defineConfig({
       fileName: (format) => `index.${format === 'es' ? 'mjs' : 'js'}`
     },
     rollupOptions: {
-      external: [
-        'vue',
-        'axios',
-        'echarts',
-        'class-variance-authority',
-        'clsx',
-        'dayjs',
-        'tailwind-merge'
-      ],
+      external: ['vue', 'echarts', 'axios'],
       output: {
         globals: {
           vue: 'Vue',
-          axios: 'axios',
           echarts: 'echarts',
-          'class-variance-authority': 'cva',
-          clsx: 'clsx',
-          dayjs: 'dayjs',
-          'tailwind-merge': 'twMerge'
+          axios: 'axios'
         },
+        exports: 'named',
         assetFileNames: (assetInfo) => {
           if (assetInfo.name === 'style.css') {
             return 'index.css'

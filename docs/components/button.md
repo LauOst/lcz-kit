@@ -1,6 +1,6 @@
-# Button 按钮
+# LButton 按钮
 
-按钮用于开始一个即时操作。基于 shadcn-vue 的 Button 组件进行二次封装，提供了更简单的 API 和更多的功能。
+按钮用于开始一个即时操作。基于 shadcn-vue 的 LButton 组件进行二次封装，提供了更简单的 API 和更多的功能。
 
 ## 基础用法
 
@@ -13,12 +13,12 @@
 ```vue
 <template>
   <div class="space-x-4">
-    <Button>默认按钮</Button>
-    <Button variant="secondary">次要按钮</Button>
-    <Button variant="destructive">危险按钮</Button>
-    <Button variant="outline">描边按钮</Button>
-    <Button variant="ghost">幽灵按钮</Button>
-    <Button variant="link">链接按钮</Button>
+    <LButton>默认按钮</LButton>
+    <LButton variant="secondary">次要按钮</LButton>
+    <LButton variant="destructive">危险按钮</LButton>
+    <LButton variant="outline">描边按钮</LButton>
+    <LButton variant="ghost">幽灵按钮</LButton>
+    <LButton variant="link">链接按钮</LButton>
   </div>
 </template>
 ```
@@ -37,9 +37,9 @@
 ```vue
 <template>
   <div class="space-x-4">
-    <Button size="sm">小按钮</Button>
-    <Button>默认按钮</Button>
-    <Button size="lg">大按钮</Button>
+    <LButton size="sm">小按钮</LButton>
+    <LButton>默认按钮</LButton>
+    <LButton size="lg">大按钮</LButton>
   </div>
 </template>
 ```
@@ -58,8 +58,8 @@
 ```vue
 <template>
   <div class="space-x-4">
-    <Button disabled>禁用按钮</Button>
-    <Button loading>加载中</Button>
+    <LButton disabled>禁用按钮</LButton>
+    <LButton loading>加载中</LButton>
   </div>
 </template>
 ```
@@ -123,6 +123,6 @@ const handleClick = async () => {
 </script>
 
 <template>
-  <Button :loading="loading" @click="handleClick"> 提交 </Button>
+  <LButton :loading="loading" @click="handleClick"> 提交 </LButton>
 </template>
 ```

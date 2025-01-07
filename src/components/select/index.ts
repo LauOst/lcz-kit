@@ -1,12 +1,16 @@
 import { type App } from 'vue'
-import BaseSelect from './BaseSelect.vue'
+import LSelect from './LSelect.vue'
 
-export { BaseSelect }
-export * from './types'
+// 导出组件
+export { default as LSelect } from './LSelect.vue'
 
-export default {
+// 导出插件
+const SelectPlugin = {
   title: 'Select 选择器',
   install(app: App) {
-    app.component('LSelect', BaseSelect)
+    app.component('LSelect', LSelect)
   }
 }
+
+export default SelectPlugin
+export * from './types'

@@ -1,16 +1,14 @@
 <template>
   <div class="space-x-4">
-    <BaseButton @click="showDefault">默认提示</BaseButton>
-    <BaseButton @click="showWithTitle">带标题提示</BaseButton>
-    <BaseButton @click="showWithAction">带操作提示</BaseButton>
+    <LButton @click="showDefault">默认提示</LButton>
+    <LButton @click="showWithTitle">带标题提示</LButton>
+    <LButton @click="showWithAction">带操作提示</LButton>
   </div>
-  <Toaster />
 </template>
 
 <script setup lang="ts">
-import { useToast } from '@/components/toast/BaseToast'
-import { BaseButton } from '@/components/button'
-import { Toaster } from '@/components/ui/toast'
+import { useToast } from '@/components/toast/LToast'
+import { LButton } from '@/components/button'
 
 const toast = useToast()
 

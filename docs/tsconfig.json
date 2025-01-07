@@ -17,6 +17,7 @@
     "components/**/*.ts",
     "components/**/*.vue",
     "../src/**/*.ts",
-    "../src/**/*.vue"
+    "../src/**/*.vue",
+    "tailwind.config.ts"
   ]
 }

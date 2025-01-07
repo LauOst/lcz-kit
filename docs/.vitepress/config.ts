@@ -11,6 +11,7 @@ const docsPath = fileURLToPath(new URL('..', import.meta.url))
 export default defineConfig({
   title: '朗达科技',
   description: '基于 Vue 3 的现代化组件库',
+  base: '/lcz-kit/',
   vite: {
     resolve: {
       alias: [
